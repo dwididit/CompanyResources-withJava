@@ -6,6 +6,7 @@ import com.testhsm.testhsm.entity.Item;
 import com.testhsm.testhsm.entity.Satuan;
 import com.testhsm.testhsm.service.ItemService;
 import com.testhsm.testhsm.service.SatuanService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Tag(name = "Item", description = "Contains all the operations that can be performed on a item.")
 @RestController
 @RequestMapping("/item")
 public class ItemController {
