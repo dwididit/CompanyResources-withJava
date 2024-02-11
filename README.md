@@ -42,7 +42,15 @@ In the application.properties file (under src/main/resources), update the follow
 spring.datasource.url=jdbc:mysql://localhost:3306/company_resources
 spring.datasource.username=your_username
 spring.datasource.password=your_password
+```
 
+**Hibernate Configuration**
+```bash
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.generate-ddl=true
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
 ```
 
 ## Build and Run
