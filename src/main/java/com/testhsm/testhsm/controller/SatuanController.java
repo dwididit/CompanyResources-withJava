@@ -4,6 +4,7 @@ import com.testhsm.testhsm.dto.SatuanRequestDTO;
 import com.testhsm.testhsm.dto.SatuanResponseDTO;
 import com.testhsm.testhsm.entity.Satuan;
 import com.testhsm.testhsm.service.SatuanService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Tag(name = "Satuan", description = "Contains all the operations that can be performed on a satuan.")
 @RestController
 @RequestMapping("/satuan")
 public class SatuanController {
